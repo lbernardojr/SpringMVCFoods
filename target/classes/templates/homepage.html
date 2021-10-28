@@ -1,0 +1,19 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<title>Spring assessment</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+    <div align="center">
+        
+		<div>
+			<h1 th:text="@{${message}}"></h1>
+			<h2>Click Execute to get the List of Foods</h2>
+			<br><br>
+			<a th:href="@{/foodsList}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Execute</a>
+		</div>
+	</div>
+</body>
+</html>
